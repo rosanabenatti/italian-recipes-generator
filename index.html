@@ -7,56 +7,61 @@
     <title>AI Italian Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Italian Recipe - AI Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Type the name of the Italian dish"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Caprese salad
-        <br />
-        Ingredients
-        <br />
-        8 ripe plum tomatoes, sliced 2 balls of mozzarella (or vegetarian
-        alternative), sliced handful of basil leaves 2 tbsp extra virgin olive
-        oil 2 tbsp balsamic vinegar
-        <br />
-        Method
-        <br />
-        STEP 1
-        <br />
-        Arrange the slices of tomato and mozzarella on a platter, alternating
-        between slices of each, and sprinkle over the basil leaves. Season
-        generously with salt and black pepper, then drizzle over the olive oil
-        and vinegar. Serve straightaway.
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/rosanabenatti" target="_blank"
-        >Rosana Benatti</a
-      >
-      and is
-      <a
-        href="https://github.com/rosanabenatti/italian-recipes-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://italian-recipe-ai-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Italian Recipe - AI Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Type the name of the Italian dish"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">
+          Caprese salad
+          <br />
+          Ingredients
+          <br />
+          8 ripe plum tomatoes, sliced 2 balls of mozzarella (or vegetarian
+          alternative), sliced handful of basil leaves 2 tbsp extra virgin olive
+          oil 2 tbsp balsamic vinegar
+          <br />
+          Method
+          <br />
+          STEP 1
+          <br />
+          Arrange the slices of tomato and mozzarella on a platter, alternating
+          between slices of each, and sprinkle over the basil leaves. Season
+          generously with salt and black pepper, then drizzle over the olive oil
+          and vinegar. Serve straightaway.
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/rosanabenatti" target="_blank"
+          >Rosana Benatti</a
+        >
+        and is
+        <a
+          href="https://github.com/rosanabenatti/italian-recipes-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a
+          href="https://italian-recipe-ai-generator.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
