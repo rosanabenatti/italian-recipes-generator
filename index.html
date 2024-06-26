@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Italian Recipe Generator</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>Italian Recipe - AI Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Type the name of the Italian dish"
@@ -23,24 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">
-          Caprese salad
-          <br />
-          Ingredients
-          <br />
-          8 ripe plum tomatoes, sliced 2 balls of mozzarella (or vegetarian
-          alternative), sliced handful of basil leaves 2 tbsp extra virgin olive
-          oil 2 tbsp balsamic vinegar
-          <br />
-          Method
-          <br />
-          STEP 1
-          <br />
-          Arrange the slices of tomato and mozzarella on a platter, alternating
-          between slices of each, and sprinkle over the basil leaves. Season
-          generously with salt and black pepper, then drizzle over the olive oil
-          and vinegar. Serve straightaway.
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
