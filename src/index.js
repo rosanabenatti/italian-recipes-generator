@@ -1,5 +1,4 @@
 function displayRecipe(response) {
-  console.log("Recipe generated");
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("generating");
   recipeElement.innerHTML = ""; // Clear the generating message
@@ -29,10 +28,6 @@ function generateRecipe(event) {
   recipeElement.classList.remove("hidden");
   recipeElement.classList.add("generating");
   recipeElement.innerHTML = `<div class="generating">⌛ Generating the Best ${instructionsInput.value} Italian Recipe</div>`;
-
-  console.log("Generating Recipe");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiURL).then(displayRecipe);
 }
