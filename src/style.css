@@ -1,12 +1,13 @@
 body {
-  background-color: beige;
+  background-color: #f2f4f3;
   text-align: center;
-  font-family: helvetica, arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #a62b2b;
+  color: #d32f2f;
 }
+
 .container {
   margin: 120px auto;
   max-width: 600px;
@@ -21,16 +22,26 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color: brown;
+  color: #388e3c;
+}
+
+.form-container {
+  padding: 15px 20px;
+  background-color: #e8f5e9;
+  margin-bottom: 30px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
 }
 
 form {
-  padding: 30px;
-  background-color: blanchedalmond;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
   display: flex;
-  margin-bottom: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: left;
 }
 
 .instructions {
@@ -45,8 +56,8 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background: #a62b2b;
-  color: beige;
+  background: #d32f2f;
+  color: #ffffff;
   border: none;
   width: 150px;
   font-size: 16px;
@@ -56,15 +67,36 @@ form {
 
 .recipe {
   font-size: 14px;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   line-height: 24px;
-  border-left: 3px solid #a62b2b;
+  border-left: 3px solid #d32f2f;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  text-align: left;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

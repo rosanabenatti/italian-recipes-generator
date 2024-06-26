@@ -14,19 +14,22 @@
         <h1>Italian Recipe - AI Generator</h1>
       </header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Type the name of the Italian dish"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Type the name of the Italian dish"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: carbonara, insalata, pane, etc.</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
@@ -38,13 +41,14 @@
           href="https://github.com/rosanabenatti/italian-recipes-generator"
           target="_blank"
         >
-          open-sourced on GitHub</a
-        >
+          open-sourced on GitHub
+        </a>
         and is
         <a
           href="https://italian-recipe-ai-generator.netlify.app/"
           target="_blank"
-          >hosted on Netlify</a
+        >
+          hosted on Netlify </a
         >.
       </footer>
     </div>
